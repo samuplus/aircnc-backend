@@ -1,14 +1,14 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/samuplus/aircnc-backend)
 
 <h1 align="center">
-    <img alt="Aircnc" title="#AirCnC" src=".github/logo.png" width="250px" />
+    <img alt="Aircnc" title="#AirCnC" src=".github/logo@3x.png" width="250px" />
 </h1>
 
 <h4 align="center">
   ☕ Code and coffee
 </h4>
 <p align="center">
-  
+
   <a href="https://github.com/deloittech/aircnc/commits/master">
     <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/samuplus/aircnc-backend.svg">
   </a>
