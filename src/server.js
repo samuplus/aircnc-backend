@@ -5,6 +5,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 const path = require('path');
+const morgan = require('morgan');
 
 const socketio = require('socket.io');
 const http = require('http');
@@ -44,6 +45,7 @@ app.use((req, res, next) => {
 });
 
 
+
 // parameters -> route, function (req, res). Req: gets any parameter sent by user through request;
 // Res: response. res.send sends a text
 // JSON (javascript object notation): data structure that is interpreted (understood and manipulated) by both frontend and backend 
@@ -54,6 +56,10 @@ app.use((req, res, next) => {
 // install module to notify express that post will be in JSON format
 app.use(cors());
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+
+// Morgan is a logging lib
+app.use(morgan('dev'));
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.use(routes)
