@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 
 const SpotSchema = new mongoose.Schema({
     thumbnail: String,
+    thumbname: String,
+    thumbsize: Number,
+    createdAt: {
+        type: Date,
+        default: Date.now
+    },
     company: String,
     price: Number,
     techs: [String],
