@@ -49,7 +49,9 @@ This project was developed using the following technologies:
 
 ## 💻 Project
 
-AirCnC is a pet project developed to connect companies with developers. Companies with empty desks make them available at AirCnC web app, and devs book those desks using the mobile app.
+AirCnC is a pet project developed to connect companies with developers. Companies with empty desks make them available on AirCnC web app, and devs book those desks using the mobile app.
+
+Web app currently deployed on [Heroku](https://samuplus-aircnc-frontend.herokuapp.com/)
 
 ## 🔖 Reference and Layout
 
