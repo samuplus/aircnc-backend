@@ -58,5 +58,5 @@ app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.use(routes)
 
-// Make application available on localhost
-server.listen(3333);
+// If deployed on Heroku, PORT is automatically set. Otherwise, localhost is used instead
+server.listen(process.env.PORT || 3333);
