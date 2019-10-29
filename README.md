@@ -1,7 +1,7 @@
 [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/samuplus/aircnc-backend)
 
 <h1 align="center">
-    <img alt="Aircnc" title="#AirCnC" src="github/logo.png" width="250px" />
+    <img alt="Aircnc" title="#AirCnC" src=".github/logo.png" width="250px" />
 </h1>
 
 <h4 align="center">
@@ -35,7 +35,7 @@
 <br>
 
 <p align="center">
-  <img alt="Frontend" src="github/aircnc.png" width="100%">
+  <img alt="Frontend" src=".github/aircnc.png" width="100%">
 </p>
 
 ## :rocket: Technologies
