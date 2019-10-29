@@ -51,7 +51,9 @@ This project was developed using the following technologies:
 
 AirCnC is a pet project developed to connect companies with developers. Companies with empty desks make them available on AirCnC web app, and devs book those desks using the mobile app.
 
-Web app currently deployed on [Heroku](https://samuplus-aircnc-frontend.herokuapp.com/)
+<strong>Web app currently deployed on [Heroku](https://samuplus-aircnc-frontend.herokuapp.com/)</strong>
+
+You can find the frontend source code [here](https://github.com/samuplus/aircnc-frontend)
 
 ## 🔖 Reference and Layout
 
