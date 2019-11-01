@@ -1,5 +1,4 @@
-require('dotenv').config({ patth: __dirname + '/.env' });
-// require('dotenv').config();
+require('dotenv').config();
 
 const express = require('express');
 const mongoose = require('mongoose');
@@ -18,6 +17,7 @@ const server = http.Server(app);
 const io = socketio(server);
 
 mongoose.connect(process.env.MONGO_URL, {
+// mongoose.connect('mongodb+srv://onistack:omnistack@omnistack-bw2g3.mongodb.net/semanaomnistack?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
@@ -60,6 +60,7 @@ app.use(express.urlencoded({ extended: true }));
 
 // Morgan is a logging lib
 app.use(morgan('dev'));
+// Make image files accessible by default
 app.use('/files', express.static(path.resolve(__dirname, '..', 'uploads')));
 
 app.use(routes)

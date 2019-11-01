@@ -12,7 +12,7 @@ module.exports = {
     },
 
     async store(req, res){
-        const { filename } = req.file;
+        const { originalname: thumbnail, size, key, location: url = '' } = req.file;
         const { company, techs, price } = req.body;
         const { user_id } = req.headers;
 
@@ -24,12 +24,21 @@ module.exports = {
 
         const spot = await Spot.create({
             user: user_id,
-            thumbnail: filename,
+            thumbnail,
+            size,
+            key,
+            url,
             company,
             techs: techs.split(',').map(tech => tech.trim()),
             price
         })
 
         return res.json(spot)
+    },
+
+    async delete(req, res) {
+        const spot = await Spot.findById(req.params.spot_id);
+        await spot.remove();
+        return res.send();
     }
 };
