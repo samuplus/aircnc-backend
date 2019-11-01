@@ -1,3 +1,5 @@
+require('dotenv').config();
+
 const multer = require('multer');
 const path = require('path');
 const crypto = require('crypto');
@@ -43,7 +45,6 @@ const storageTypes = {
 module.exports = {
     dest: path.resolve(__dirname, "..", "..", "uploads"),
     // Set the type of storage to be used -> local or AWS S3
-    // storage: storageTypes[process.env.STORAGE_TYPE],
     storage: storageTypes[process.env.STORAGE_TYPE],
     // Set max image size
     limits: {
