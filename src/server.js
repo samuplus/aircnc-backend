@@ -17,7 +17,6 @@ const server = http.Server(app);
 const io = socketio(server);
 
 mongoose.connect(process.env.MONGO_URL, {
-// mongoose.connect('mongodb+srv://onistack:omnistack@omnistack-bw2g3.mongodb.net/semanaomnistack?retryWrites=true&w=majority', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
